@@ -14,18 +14,24 @@
 <body>
     <!-- <h1>FETCH API Y JSON PLACEHOLDER</h1> -->
     <!-- <div id="usuario"></div> -->
-    <h1>Consulta el clima de tu ciudad</h1>
+    <h1 class="tittle--api">Consulta el clima de tu ciudad</h1>
     <div id="container--clima">
         <form>
             <input  type="text" placeholder="Clima en..." id="city">
-            <input type="button" value="Consutar" id="send">
+            <input type="button" value="Consutar"><i id="send" class='bx bx-search' style='color:#f1eded'></i>
         </form>
         <div id="clima">
-            <p>Aqui puedes ver la temperatura de tu ciudad...</p>
+            <p>Consulta la temperatura de tu ciudad...</p>
+        </div>
+        <div id="viento">
+            <!-- <p>viento: 10m/s</p> -->
         </div>
     </div>
 
     <!-- <script src="./assets/js/app.js"></script> -->
     <script src="./assets/js/app2.js"></script>
+
+    <!-- esweet alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

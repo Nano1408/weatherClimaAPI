@@ -1,6 +1,36 @@
 body{
+    height: 100vh !important;
+    background-image: url("/assets/img/day/dia1.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+    overflow-y:hidden;
+}
+.tittle--api{
+    margin-top: 8%;
+    font-size: 50px;
+    color: #FEFCFB;
+    background: url('/assets/img/day/nubes.jpg');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: color 50s linear infinite;
+}
+@keyframes color {
+    from { 
+      background-position: 0% 50%;
+    }
+    to { 
+      background-position: 100% 50%; 
+    }
+  }
+#clima{
+    display: flex;
+}
+#clima img{
+    width: 130px;
+    height: 130px;
 }
 #clima p,.celsius{
     color: #FEFCFB;
@@ -15,8 +45,9 @@ body{
     margin-top: 2%;
     padding: 50px;
     border-radius: 30px;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(69,65,75,1) 100%, rgba(0,212,255,1) 100%);
+    background-image: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+     backdrop-filter: blur(20px);
 }
 form input:first-child{
     color: #FFFFFF;
@@ -35,14 +66,40 @@ form input:nth-child(2){
     color: #FFFFFF;
     padding: 8px 20px;
     background-color: #0A1128;
-    border: none;
+    border: 2px solid #0A1128;
     border-radius: 8px;
     font-size: 20px;
     vertical-align: middle;
     cursor: pointer;
+    display: none;
 }
-form input:nth-child(2):hover {
+form #send{
+    font-size: 25px;
+    vertical-align: middle;
+    background-color: #0A1128;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+/* form input:nth-child(2):hover {
     color: #0A1128;
     background-color: #FEFCFB;
-    border: 2px solid #0A1128;
+   } */
+
+   /* viento en m/s*/
+   #viento{
+    margin-top: -10%;
+    margin-left: -15%;
+    text-align: center;
+    color: #FEFCFB;
+   }
+   #viento p{
+    margin: 0;
+   }
+   #viento p:first-child{
+    margin-top: 3%;
+   }
+
+   /* sweet alert */
+   body.swal2-height-auto{
+    height: 100vh !important;
    }
